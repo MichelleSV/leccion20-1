@@ -25,4 +25,4 @@ console.log(suma2(5));
 var suma12 = suma(12);
 console.log(suma12(76))
 ```
-En el primer caso de código podemos ver que al momento de ejecutarse la funcion agarra la variable global "var num2 = 0", entonces lo que tenemos que hacer es eliminar esa variable global e insertarla como parámetro en la función, esto pasa debido  al comportamiento predeterminado del movimiento de JavaScript(hoisting).
+Tenemos una función anónima con dentro de otra función (un clousure), por lo que se está tomando la variable global "var num2 = 0", entonces lo que haremos es borrarla  y espedificarla como parámetro el la función anónima para que así tome directamente los valores que se le otorga al último.
